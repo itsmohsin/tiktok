@@ -4,7 +4,7 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:tiktok/controllers/auth_contorller.dart';
 
-// TODO:
+// Pages:
 const pages = [
   Text('Home Screen'),
   Text('Search Screen'),
