@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:tiktok/views/screens/upload_video_controller.dart';
+import 'package:tiktok/controllers/upload_video_controller.dart';
 import 'package:tiktok/widgets/text_input_field.dart';
 import 'package:video_player/video_player.dart';
 
@@ -36,6 +36,12 @@ class _ConfirmScreenState extends State<ConfirmScreen> {
     controller.play();
     controller.setVolume(1);
     controller.setLooping(true);
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    controller.dispose();
   }
 
   @override
@@ -75,7 +81,7 @@ class _ConfirmScreenState extends State<ConfirmScreen> {
                     child: TextInputField(
                         controller: _captionController,
                         labelText: 'Caption',
-                        icon: Icons.music_note),
+                        icon: Icons.closed_caption),
                   ),
                   const SizedBox(
                     height: 10,

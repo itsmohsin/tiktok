@@ -16,6 +16,7 @@ class UploadVideoController extends GetxController {
 
   Future<String> _uploadVideoToStorage(String id, String videoPath) async {
     Reference ref = firebaseStorage.ref().child('videos').child(id);
+
     UploadTask uploadTask = ref.putFile(await _compressVideo(videoPath));
     TaskSnapshot snap = await uploadTask;
     String downloadUrl = await snap.ref.getDownloadURL();
@@ -44,13 +45,13 @@ class UploadVideoController extends GetxController {
       // get id
       var allDocs = await firestore.collection('videos').get();
       int len = allDocs.docs.length;
-      String videoUrl = await _uploadVideoToStorage('Video $len', videoPath);
-      String thumbnail = await _uploadImageToStorage('Video $len', videoPath);
+      String videoUrl = await _uploadVideoToStorage("Video $len", videoPath);
+      String thumbnail = await _uploadImageToStorage("Video $len", videoPath);
 
       Video video = Video(
         username: (userDoc.data()! as Map<String, dynamic>)['name'],
         uid: uid,
-        id: 'Video $len',
+        id: "Video $len",
         likes: [],
         shareCount: 0,
         commentCount: 0,
