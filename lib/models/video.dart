@@ -36,7 +36,7 @@ class Video {
         "commentCount": commentCount,
         "songName": songName,
         "caption": caption,
-        "videoUr": videoUrl,
+        "videoUrl": videoUrl,
         "thumbnail": thumbnail,
         "profilePhoto": profilePhoto,
       };

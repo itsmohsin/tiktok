@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:tiktok/constants.dart';
 import 'package:tiktok/controllers/video_controller.dart';
-import 'package:tiktok/views/widgets/circle_animation.dart';
-import 'package:tiktok/views/widgets/video_player_item.dart';
+import 'package:tiktok/views/screens/widgets/circle_animation.dart';
+import 'package:tiktok/views/screens/widgets/video_player_item.dart';
 
 class VideoScreen extends StatelessWidget {
   VideoScreen({super.key});
@@ -157,11 +158,15 @@ class VideoScreen extends StatelessWidget {
                                   Column(
                                     children: [
                                       InkWell(
-                                        onTap: () {},
-                                        child: const Icon(
+                                        onTap: () =>
+                                            videoController.likedVideo(data.id),
+                                        child: Icon(
                                           Icons.favorite,
                                           size: 40,
-                                          color: Colors.red,
+                                          color: data.likes.contains(
+                                                  authController.user.uid)
+                                              ? Colors.red
+                                              : Colors.white,
                                         ),
                                       ),
                                       const SizedBox(
@@ -170,7 +175,9 @@ class VideoScreen extends StatelessWidget {
                                       Text(
                                         data.likes.length.toString(),
                                         style: const TextStyle(
-                                            fontSize: 20, color: Colors.white),
+                                          fontSize: 20,
+                                          color: Colors.white,
+                                        ),
                                       ),
                                     ],
                                   ),
