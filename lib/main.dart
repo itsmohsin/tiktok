@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tiktok/constants.dart';
 import 'package:tiktok/controllers/auth_contorller.dart';
-import 'package:tiktok/views/screens/auth/login_screen.dart';
+import 'package:tiktok/views/auth/login_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

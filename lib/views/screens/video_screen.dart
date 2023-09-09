@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tiktok/constants.dart';
 import 'package:tiktok/controllers/video_controller.dart';
-import 'package:tiktok/views/screens/widgets/circle_animation.dart';
-import 'package:tiktok/views/screens/widgets/video_player_item.dart';
+import 'package:tiktok/views/widgets/circle_animation.dart';
+import 'package:tiktok/views/widgets/video_player_item.dart';
 
 class VideoScreen extends StatelessWidget {
   VideoScreen({super.key});
