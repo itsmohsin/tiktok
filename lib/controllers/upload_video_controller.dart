@@ -3,7 +3,7 @@ import 'package:firebase_storage/firebase_storage.dart';
 import 'package:get/get.dart';
 import 'package:tiktok/constants.dart';
 import 'package:tiktok/models/video.dart';
-import 'package:video_compress_plus/video_compress_plus.dart';
+import 'package:video_compress/video_compress.dart';
 
 class UploadVideoController extends GetxController {
   _compressVideo(String videoPath) async {
