@@ -5,11 +5,13 @@ import 'package:tiktok/controllers/comment_controller.dart';
 import 'package:timeago/timeago.dart' as tago;
 
 class CommentScreen extends StatelessWidget {
+  final String id;
+
   CommentScreen({
     super.key,
     required this.id,
   });
-  final String id;
+
   final TextEditingController _commentController = TextEditingController();
   CommentController commentController = Get.put(CommentController());
 
