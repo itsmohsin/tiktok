@@ -2,7 +2,6 @@
 
 ## Video Sharing Application.
 
-### ScreenShots
 <img src="/screenshots/1.png" width=23.6% height=27.8%>&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="/screenshots/2.png" width=23.6% height=27.8%>&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="/screenshots/3.png" width=23.6% height=27.8%>&nbsp;&nbsp;&nbsp;&nbsp;
