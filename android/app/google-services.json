@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:512985625170:android:5634d9b50acc50307be58b",
+        "mobilesdk_app_id": "1:512985625170:android:34c169c59ac9dba07be58b",
         "android_client_info": {
-          "package_name": "com.itsmohsin.tikktok"
+          "package_name": "com.itsmohsin.tiktok"
         }
       },
       "oauth_client": [],
