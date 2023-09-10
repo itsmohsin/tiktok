@@ -1,51 +1,26 @@
 {
   "project_info": {
-    "project_number": "71192123550",
-    "project_id": "tiktok-fa32a",
-    "storage_bucket": "tiktok-fa32a.appspot.com"
+    "project_number": "512985625170",
+    "project_id": "tiktok-clone-f4ce8",
+    "storage_bucket": "tiktok-clone-f4ce8.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:71192123550:android:a6fa35b06c29864745838f",
+        "mobilesdk_app_id": "1:512985625170:android:5634d9b50acc50307be58b",
         "android_client_info": {
-          "package_name": "com.itsmohsin.tiktok"
+          "package_name": "com.itsmohsin.tikktok"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "71192123550-t0pnvl1ml9mmlir4th54mth1cg7mhkic.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.itsmohsin.tiktok",
-            "certificate_hash": "1275adee36d227d3f3cf2d93092869728266ed4c"
-          }
-        },
-        {
-          "client_id": "71192123550-mmusmia6oaongdrhasf1oaphqkkm8gr7.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDrbH5U8cDcRThjhTvDwuuybCJWbJFitGQ"
+          "current_key": "AIzaSyBVM60tEi98tDL-tYoJIQnVWtgUWSvHDdk"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "71192123550-mmusmia6oaongdrhasf1oaphqkkm8gr7.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "71192123550-8h7vf8um3i9phgd2fsjqv0cqau7sa0d8.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.itsmohsin.tiktok"
-              }
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }
